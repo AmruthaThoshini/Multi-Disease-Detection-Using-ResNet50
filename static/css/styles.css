@@ -1,0 +1,122 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#f4f7fb;
+margin:0;
+text-align:center;
+}
+
+/* HEADER */
+
+.header{
+background:#2c7be5;
+color:white;
+padding:25px;
+}
+
+.header p{
+margin-top:5px;
+font-size:14px;
+}
+
+/* FOOTER */
+
+.footer{
+margin-top:60px;
+padding:10px;
+background:#2c7be5;
+color:white;
+font-size:13px;
+}
+
+/* UPLOAD BOX */
+
+.upload-box{
+margin-top:80px;
+background:white;
+padding:40px;
+width:420px;
+margin-left:auto;
+margin-right:auto;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+
+button{
+background:#2c7be5;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:6px;
+cursor:pointer;
+font-size:15px;
+}
+
+button:hover{
+background:#1a5ed8;
+}
+
+/* RESULT BOX */
+
+.result-box{
+margin-top:40px;
+background:white;
+padding:30px;
+width:70%;
+margin-left:auto;
+margin-right:auto;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* DESCRIPTION */
+
+.description{
+background:#f8f9fc;
+padding:15px;
+border-radius:8px;
+margin-top:15px;
+}
+
+/* IMAGES */
+
+.images{
+display:flex;
+justify-content:center;
+gap:60px;
+margin-top:25px;
+}
+
+.image-card img{
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* TEXT STYLING */
+
+.disease{
+color:#e63946;
+font-weight:bold;
+}
+
+.advice{
+font-style:italic;
+margin-top:10px;
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+display:inline-block;
+margin-top:20px;
+text-decoration:none;
+background:#2c7be5;
+color:white;
+padding:10px 20px;
+border-radius:6px;
+}
+
+.back-btn:hover{
+background:#1a5ed8;
+}

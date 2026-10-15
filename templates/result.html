@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="result-box">
+
+<h2>Prediction Result</h2>
+
+<h3>Disease: <span class="disease">{{ prediction }}</span></h3>
+
+<h3>Confidence Score: {{ confidence }}%</h3>
+
+<h3>Risk Level:
+<span class="risk {{ risk_level|lower|replace(' ','-') }}">
+{{ risk_level }}
+</span>
+</h3>
+
+<p class="advice">{{ advice }}</p>
+
+{% if description %}
+<div class="description">
+<h4>About this Disease</h4>
+<p>{{ description }}</p>
+</div>
+{% endif %}
+
+<div class="images">
+
+<div class="image-card">
+<h4>Uploaded Image</h4>
+<img src="{{ url_for('static', filename=image_path) }}" width="260">
+</div>
+
+<div class="image-card">
+<h4>Grad-CAM Heatmap</h4>
+<img src="{{ url_for('static', filename=heatmap_path) }}" width="260">
+</div>
+
+</div>
+
+<br>
+
+<a class="back-btn" href="/">Predict Another Image</a>
+
+</div>
+
+{% endblock %}
